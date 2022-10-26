@@ -9,7 +9,7 @@ public class class4_5 {
         System.out.println("Введите букву");
         String line = in.nextLine();
         char c = line.charAt(0);
-        if( Character.isDigit(c))
+        if (Character.isDigit(c))
             System.out.println(c +" это цифра");
         else if (Character.isLetter(c))
             System.out.println(c +" это буква");
