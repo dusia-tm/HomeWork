@@ -14,5 +14,4 @@ public class class4_5 {
         else if (Character.isLetter(c))
             System.out.println(c +" это буква");
     }
-
 }
