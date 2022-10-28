@@ -9,57 +9,49 @@ public class class3 {
         // максимальное из двух
         System.out.println("Наибольшее из x и y это: " +Math.max(x, y));
 
-        // возвращает квадратный корень y
+        // извлечение квадратного корня y
         System.out.println("Квадратный корень y: " + Math.sqrt(y));
 
-        //returns 2 power of 4 i.e. 2*2*2*2
-        System.out.println("Power of x and y is: " + Math.pow(x, y));
+        //возводит значение первого аргумента в степень второго аргумента: напр. 2 = 2*2*2*2
+        System.out.println("Степень x и y  " + Math.pow(x, y));
 
-        // return the logarithm of given value
-        System.out.println("Logarithm of x is: " + Math.log(x));
-        System.out.println("Logarithm of y is: " + Math.log(y));
+        // возвращает натуральный логарифм аргумента
+        System.out.println("логарифм x: " + Math.log(x));
+        System.out.println("логарифм y: " + Math.log(y));
 
-        // return the logarithm of given value when base is 10
-        System.out.println("log10 of x is: " + Math.log10(x));
-        System.out.println("log10 of y is: " + Math.log10(y));
+        // возвращает десятичный (по основанию 10) логарифм числа
+        System.out.println("Десятичный логарифм x: " + Math.log10(x));
+        System.out.println("Десятичный логарифм y: " + Math.log10(y));
 
-        // return the log of x + 1
-        System.out.println("log1p of x is: " +Math.log1p(x));
+        // возвращает натуральный логарифм по основанию e и аргументу
+        System.out.println("exp а: " +Math.exp(x));
 
-        // return a power of 2
-        System.out.println("exp of a is: " +Math.exp(x));
-
-        // return (a power of 2)-1
-        System.out.println("expm1 of a is: " +Math.expm1(x));
-        double a = 30;
-        // converting values to radian
+        double a = 30.23232;
+        // преобразует градусы в радианы
         double b = Math.toRadians(a);
 
-        // return the trigonometric sine of a
-        System.out.println("Sine value of a is: " +Math.sin(a));
+        // возвращает синус указанного в радианах значения
+        System.out.println("синус а: " +Math.sin(a));
 
-        // return the trigonometric cosine value of a
-        System.out.println("Cosine value of a is: " +Math.cos(a));
+        // возвращает косинус указанного в радианах значения
+        System.out.println("косинус а: " +Math.cos(a));
 
-        // return the trigonometric tangent value of a
-        System.out.println("Tangent value of a is: " +Math.tan(a));
+        // возвращает тангенс указанного в радианах значения
+        System.out.println("тангенс а: " +Math.tan(a));
 
-        // return the trigonometric arc sine of a
-        System.out.println("Sine value of a is: " +Math.asin(a));
+        // округляет дробь до целого числа
+        System.out.println("Округление a: " +Math.round(a));
 
-        // return the trigonometric arc cosine value of a
-        System.out.println("Cosine value of a is: " +Math.acos(a));
+        // возвращает арккосинус указанного в радианах значения
+        System.out.println("арккосинус a: " +Math.acos(a));
 
-        // return the trigonometric arc tangent value of a
-        System.out.println("Tangent value of a is: " +Math.atan(a));
+        // возвращает арктангенс указанного в радианах значения
+        System.out.println("арктангенс a: " +Math.atan(a));
 
-        // return the hyperbolic sine of a
-        System.out.println("Sine value of a is: " +Math.sinh(a));
+        // преобразует радианы в градусы
+        System.out.println("Градус от а: " +Math.toDegrees(a));
 
-        // return the hyperbolic cosine value of a
-        System.out.println("Cosine value of a is: " +Math.cosh(a));
-
-        // return the hyperbolic tangent value of a
-        System.out.println("Tangent value of a is: " +Math.tanh(a));
+        // округляет дробь в меньшую сторону
+        System.out.println("Округление а: " +Math.floor(a));
     }
 }
