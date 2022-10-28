@@ -26,9 +26,9 @@ public class class3 {
         // возвращает натуральный логарифм по основанию e и аргументу
         System.out.println("exp а: " +Math.exp(x));
 
-        double a = 30.23232;
+        double a = 30.23;
         // преобразует градусы в радианы
-        double b = Math.toRadians(a);
+        System.out.println("Радиан а: " + Math.toRadians(a));
 
         // возвращает синус указанного в радианах значения
         System.out.println("синус а: " +Math.sin(a));
