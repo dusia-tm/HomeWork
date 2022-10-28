@@ -2,7 +2,7 @@ package home_work_1;
 
 import java.util.Scanner;
 
-public class class6_2 {
+public class Class6_2 {
     public static void main(String[] args) {
         String str1 = "Вася";
         String str2 = "Анастасия";

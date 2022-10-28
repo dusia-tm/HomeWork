@@ -1,6 +1,6 @@
 package home_work_1;
 
-public class class2 {
+public class Class2 {
     public static void main(String[] args) {
         int a = 5;
         int b = 2;

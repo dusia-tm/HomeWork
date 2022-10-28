@@ -2,7 +2,7 @@ package home_work_1;
 
 import java.util.Scanner;
 
-public class class4_1 {
+public class Class4_1 {
     public static void main(String args[]) {
         int num;
         System.out.println("Введите число: ");
