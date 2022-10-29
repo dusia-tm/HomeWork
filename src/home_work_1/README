@@ -8,23 +8,7 @@
 Задание 4.4 выполнено в классе Class4_4
 Задание 4.5 выполнено в классе Class4_5
 Задание 4.6 выполнено в классе Class4_5
-Задание 5 выполнено в классе Class4_5
+Задание 5 выполнено в классе Class5
 Задание 6.1 выполнено в классе Class6_1
 Задание 6.2 выполнено в классе Class6_2
 Задание 6.3 выполнено в классе Class6_3
-public static class Class_5 {
-    public static void main(java.lang.String[] args) {
-        Scanner console = new Scanner(System.in);
-        boolean weekday = console.hasNextBoolean();
-        boolean vacation =console.hasNextBoolean();
-
-        if (sleepIn(weekday, vacation))
-            System.out.println("Можем спать дальше");
-        else
-            System.out.println("Пора идти на работу");
-    }
-
-    private static boolean sleepIn(boolean weekday, boolean vacation) {
-        return true;
-    }
-}
