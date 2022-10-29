@@ -6,7 +6,7 @@ public class Class_5 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         boolean weekday = console.hasNextBoolean();
-        boolean vacation =console.hasNextBoolean();
+        boolean vacation = console.hasNextBoolean();
 
         if (sleepIn(weekday, vacation))
             System.out.println("Можем спать дальше");
@@ -18,5 +18,3 @@ public class Class_5 {
         return true;
     }
 }
-
-
