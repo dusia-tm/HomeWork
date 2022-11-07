@@ -29,5 +29,3 @@ public class Task1_1 {
         System.out.println("Конец");
     }
 }
-}
-
