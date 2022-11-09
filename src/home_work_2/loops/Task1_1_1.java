@@ -2,7 +2,6 @@ package home_work_2.loops;
 
 import java.util.Scanner;
 
-//
 public class Task1_1_1 {
 
         public static void main(String[] args) {
@@ -30,4 +29,3 @@ public class Task1_1_1 {
             System.out.println("Конец");
         }
     }
-//
