@@ -2,25 +2,48 @@ package home_work_2.loops;
 
 public class Task1_6 {
     public static void main(String[] args) {
+        int number = 9;
+        multiplicationTable(number);
+    }
 
-        String[] array = new String[80];
-        for (int i = 0; i < 80; ) {
-            for (int j = 2; j < 10; j++) {
-                for (int k = 1; k < 11; k++) {
-                    array[i] =  String.format("%d x %2d = %2d", j, k, j * k);
-                    i++;
+    public static void multiplicationTable(int number) {
+        System.out.println("");
+        System.out.println("\t\t\t" + "Таблица умножения");
+        System.out.println("");
+        if (number <= 5) {
+            for (int i = 1; i <= 10; i++) {
+                for (int j = 2; j <= number; j++) {
+                    if (j == number) {
+                        System.out.print(j + " * " + i + " = " + i * j + "\t");
+                        System.out.println("");
+                    } else {
+                        System.out.print(j + " * " + i + " = " + i * j + "\t");
+                    }
+                }
+            }
+        } else {
+            for (int i = 1; i <= 10; i++) {
+                for (int j = 2; j <= 5; j++) {
+                    if (j == 5) {
+                        System.out.print(j + " * " + i + " = " + i * j + "\t");
+                        System.out.println("");
+                    } else {
+                        System.out.print(j + " * " + i + " = " + i * j + "\t");
+                    }
+                }
+            }
+            System.out.println("");
+            for (int i = 1; i <= 10; i++) {
+                for (int j = 6; j <= number; j++) {
+                    if (j == number) {
+                        System.out.print(j + " * " + i + " = " + i * j + "\t");
+                        System.out.println("");
+                    } else {
+                        System.out.print(j + " * " + i + " = " + i * j + "\t");
+                    }
                 }
             }
         }
-        System.out.println("                       ТАБЛИЦА                   ");
-        System.out.println("                      УМНОЖЕНИЯ                  ");
-        for (int i = 0; i < 10; i++) {
-            System.out.printf("%s   %s   %s   %s\n", array[i], array[i+10], array[i+20], array[i+30]);
-        }
-        System.out.println();
-        for (int i = 40; i < 50; i++) {
-            System.out.printf("%s   %s   %s   %s\n", array[i], array[i+10], array[i+20], array[i+30]);
-        }
     }
 }
-}
+

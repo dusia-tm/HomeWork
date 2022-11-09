@@ -2,27 +2,31 @@ package home_work_2.loops;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
-    public class Task1_3 {
-    public static void main(String[] args) {
-        String n1 = "", n2 = "";
-        try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            System.out.println("Введите первое число:");
-            n1 = NumberEntry.enterNumber(reader);
-            System.out.println("Введите второе число (целое, положительное):");
-            n2 = NumberEntry.enterPositiveInteger(reader);
-        } catch(Exception ignore) {}
+public class Task1_3 {
+        public static void main(String[] args) {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Введите число, возводимое в степень");
 
-        double numberOne = Double.parseDouble(n1);
-        int numberTwo = Integer.parseInt(n2);
-        double result = numberOne;
-        if(numberTwo == 0) {
-            result = 1;
+            double num1 = scan.nextDouble();
+            System.out.println("Введите степень");
+            if(scan.hasNextInt()) {
+                int expon = scan.nextInt();
+                double totalRes =num1;
+                if(expon >0) {
+                    if (num1 > 0) {
+                        for (int i = 1; i < expon; i++) {
+                            totalRes =totalRes  * expon;
+                        }
+                        System.out.println(num1 + " ^ " + expon + " = " + totalRes);
+                    }
+                }else{
+                    System.out.println("Вы ввели отрицательную степень");
+                }
+            }else {
+                System.out.println("Введено не число или дробь");
+            }
         }
-        for (int i = 1; i < numberTwo; i++) {
-            result *=numberOne;
-        }
-        System.out.printf("%f ^ %d = %f", numberOne, numberTwo, result);
-    }
 }
 
