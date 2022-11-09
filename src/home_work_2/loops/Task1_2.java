@@ -1,28 +1,33 @@
 package home_work_2.loops;
 
+import java.util.Scanner;
+
 public class Task1_2 {
     public static void main(String[] args) {
-        if(!args[0].matches("[0-9]+")) {
-            if(args[0].matches("[0-9]+\\.[0-9]+")) {
-                System.out.println("Ошибка: введено не целое число.");
-            } else if(args[0].matches("[-0-9]+\\.[0-9]+") || args[0].matches("-[0-9]+")) {
-                System.out.println("Ошибка: введено отрицательное число.");
-            } else {
-                System.out.println("Ошибка: введено не число.");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите целые числа через пробел. 0 вводить нелья.");
+        if(scan.hasNextInt()) {
+            String number = scan.nextLine();
+            if(!number.contains("0")) {
+                int totalRes = 1;
+                String strArray[] = number.split(" ");
+                int numArr[] = new int[strArray.length];
+                for (int i = 0; i < strArray.length; i++) {
+                    numArr[i] = Integer.parseInt(strArray[i]);
+                    if (i < strArray.length -1) {
+                        System.out.print(numArr[i] + " * ");
+                    } else {
+                        System.out.print(numArr[i]);
+                    }
+                    totalRes = totalRes * numArr[i];
+                }
+                System.out.println(" = " + totalRes);
+            }else{
+                System.out.println("Вы ввели 0. Повторите");
             }
-            return;
+        }else{
+            System.out.println("Введены не корректные данные. Вы ввели не число либо вы ввели дробь");
         }
-        char[] setOfNumbers = args[0].toCharArray();
-        long result = 1L;
-        for (int i = 0; i < setOfNumbers.length; i++) {
-            int number = Integer.parseInt(String.valueOf(setOfNumbers[i]));
-            System.out.print(number);
-            if(i != setOfNumbers.length - 1) {
-                System.out.print(" * ");
-            }
-            result = Math.multiplyExact(number, result);
-        }
-        System.out.print(" = " + result);
     }
 }
 
