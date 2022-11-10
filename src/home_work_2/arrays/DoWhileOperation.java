@@ -46,3 +46,4 @@ package home_work_2.arrays;
             } while (b >= 0);
             System.out.println("");
         }
+    }

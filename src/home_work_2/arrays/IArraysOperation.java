@@ -8,4 +8,3 @@ public interface IArraysOperation {
 
         void printReversedElements(int[] arr);
     }
-}

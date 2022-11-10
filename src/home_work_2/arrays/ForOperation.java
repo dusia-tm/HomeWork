@@ -1,6 +1,5 @@
 package home_work_2.arrays;
 
-public class ForOperation {
     public class ForOperation implements IArraysOperation {
         /**
          * Метод, позволяющий вывести в консоль все числа, введенные через консоль как элементы массива.
@@ -39,4 +38,4 @@ public class ForOperation {
             }
             System.out.println("");
         }
-}
+    }
